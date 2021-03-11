@@ -50,11 +50,21 @@ function renderMeeseeks(meeseek) {
     deleteMeeseeksButton.className = "card-link";
     deleteMeeseeksButton.innerText = "Delete";
 
+    const updateMeeseeksButton = document.createElement("button");
+    updateMeeseeksButton.className = "card-link";
+    updateMeeseeksButton.innerText = "Update";
+
     deleteMeeseeksButton.addEventListener('click', function () {
       deleteMeeseeks(meeseek.id);
     });
 
+    updateMeeseeksButton.addEventListener('click', function () {
+        id = meeseek.id; 
+        myModal.show();
+
+    });
     meeseeksFooter.appendChild(deleteMeeseeksButton);
+    meeseeksFooter.appendChild(updateMeeseeksButton);
   
     return newColumn;
   }
@@ -84,4 +94,37 @@ function renderMeeseeks(meeseek) {
   
   });
 
+
+  //update 
+var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+let id;
+document.getElementById("meeseeksUpdate").addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const data = {
+        name: this.name.value,
+        purpose: this.purpose.value,
+        dateActivated: this.dateActivated.value
+      };
+
+      axios.put(contextPath + "/updateMeeseeks/" + id, data)
+      .then(() => {
+      
+          this.reset();
+          this.name.focus();
+          getMeeseeks();
+        })
+          .catch(err => console.error(err));    
+
+
+    })
+
+function updateMeeseeks(id, newName, newPurpose, newDateActivated) {
+    
+    const data = { 
+        name: newName.value,
+        purpose: newPurpose.value,
+        dateActivated: newDateActivated.value
+    }
+  };
 getMeeseeks();
