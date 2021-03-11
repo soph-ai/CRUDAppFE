@@ -1,0 +1,20 @@
+h1 {
+    text-align: center 
+}
+
+h1 {
+   color:yellowgreen 
+}
+
+#image.resize {
+    width:auto;
+    height:450px;
+}
+
+body {
+    background-color:rgb(94, 106, 117)
+}
+
+#meeseeksForm {
+    color:rgb(30, 193, 243)
+}

@@ -48,11 +48,11 @@ function renderMeeseeks(meeseek) {
   
     const deleteMeeseeksButton = document.createElement("button");
     deleteMeeseeksButton.className = "card-link";
-    deleteMeeseeksButton.innerText = "Delete";
+    deleteMeeseeksButton.innerText = "Expire";
 
     const updateMeeseeksButton = document.createElement("button");
     updateMeeseeksButton.className = "card-link";
-    updateMeeseeksButton.innerText = "Update";
+    updateMeeseeksButton.innerText = "Edit";
 
     deleteMeeseeksButton.addEventListener('click', function () {
       deleteMeeseeks(meeseek.id);
