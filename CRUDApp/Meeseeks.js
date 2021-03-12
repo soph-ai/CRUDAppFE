@@ -45,7 +45,7 @@ function renderMeeseeks(meeseek) {
     const meeseeksFooter = document.createElement("div");
     meeseeksFooter.className = "card-footer"
     newMeeseeks.appendChild(meeseeksFooter);
-  
+
     const deleteMeeseeksButton = document.createElement("button");
     deleteMeeseeksButton.className = "card-link";
     deleteMeeseeksButton.innerText = "Expire";
@@ -55,47 +55,47 @@ function renderMeeseeks(meeseek) {
     updateMeeseeksButton.innerText = "Edit";
 
     deleteMeeseeksButton.addEventListener('click', function () {
-      deleteMeeseeks(meeseek.id);
+        deleteMeeseeks(meeseek.id);
     });
 
     updateMeeseeksButton.addEventListener('click', function () {
-        id = meeseek.id; 
+        id = meeseek.id;
         myModal.show();
 
     });
     meeseeksFooter.appendChild(deleteMeeseeksButton);
     meeseeksFooter.appendChild(updateMeeseeksButton);
-  
+
     return newColumn;
-  }
-  
-  function deleteMeeseeks(id) {
+}
+
+function deleteMeeseeks(id) {
     axios.delete(contextPath + "/expireMeeseeks/" + id)
-      .then(() => getMeeseeks())
-      .catch(err => console.error(err));
-  }
+        .then(() => getMeeseeks())
+        .catch(err => console.error(err));
+}
 
-  document.getElementById("meeseeksForm").addEventListener('submit', function (event) {
+document.getElementById("meeseeksForm").addEventListener('submit', function (event) {
     event.preventDefault();
-  
+
     const data = {
-      name: this.name.value,
-      purpose: this.purpose.value,
-      dateActivated: this.dateActivated.value
+        name: this.name.value,
+        purpose: this.purpose.value,
+        dateActivated: this.dateActivated.value
     };
-  
+
     axios.post(contextPath + "/createMeeseeks", data)
-    .then(() => {
-      this.reset();
-      this.name.focus();
-      getMeeseeks();
-    })
-      .catch(err => console.error(err));
-  
-  });
+        .then(() => {
+            this.reset();
+            this.name.focus();
+            getMeeseeks();
+        })
+        .catch(err => console.error(err));
+
+});
 
 
-  //update/edit Mr Meeseeks method 
+//update/edit Mr Meeseeks method 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'));
 let id;
 document.getElementById("meeseeksUpdate").addEventListener('submit', function (event) {
@@ -105,36 +105,29 @@ document.getElementById("meeseeksUpdate").addEventListener('submit', function (e
         name: this.name.value,
         purpose: this.purpose.value,
         dateActivated: this.dateActivated.value
-      };
+    };
 
-      axios.put(contextPath + "/updateMeeseeks/" + id, data)
-      .then(() => {
-      
-          this.reset();
-          this.name.focus();
-          getMeeseeks();
+    axios.put(contextPath + "/updateMeeseeks/" + id, data)
+        .then(() => {
+
+            this.reset();
+            this.name.focus();
+            getMeeseeks();
         })
-          .catch(err => console.error(err));    
+        .catch(err => console.error(err));
 
 
-    })
+})
 
 function updateMeeseeks(id, newName, newPurpose, newDateActivated) {
-    
-    const data = { 
+
+    const data = {
         name: newName.value,
         purpose: newPurpose.value,
         dateActivated: newDateActivated.value
     }
-  };
+};
 getMeeseeks();
-
-//Pop up message (toast) 
-
-// var myToastEl = document.getElementById('myToast')
-// myToastEl.addEventListener('hidden.bs.toast', function () {
-//     toast.show()
-// })
 
 // Data Picker Initialization
 $('.datepicker').pickadate();
