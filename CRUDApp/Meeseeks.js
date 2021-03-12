@@ -20,10 +20,10 @@ function getMeeseeks() {
 function renderMeeseeks(meeseek) {
 
     const newColumn = document.createElement("div");
-    newColumn.className = "col";
+    newColumn.className = "col-4";
 
     const newMeeseeks = document.createElement("div");
-    newMeeseeks.className = "card";
+    newMeeseeks.className = "card text-center";
     newColumn.appendChild(newMeeseeks);
 
     const meeseeksBody = document.createElement("div");
@@ -48,11 +48,11 @@ function renderMeeseeks(meeseek) {
   
     const deleteMeeseeksButton = document.createElement("button");
     deleteMeeseeksButton.className = "card-link";
-    deleteMeeseeksButton.innerText = "Delete";
+    deleteMeeseeksButton.innerText = "Expire";
 
     const updateMeeseeksButton = document.createElement("button");
     updateMeeseeksButton.className = "card-link";
-    updateMeeseeksButton.innerText = "Update";
+    updateMeeseeksButton.innerText = "Edit";
 
     deleteMeeseeksButton.addEventListener('click', function () {
       deleteMeeseeks(meeseek.id);
@@ -95,7 +95,7 @@ function renderMeeseeks(meeseek) {
   });
 
 
-  //update 
+  //update/edit Mr Meeseeks method 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'));
 let id;
 document.getElementById("meeseeksUpdate").addEventListener('submit', function (event) {
@@ -128,3 +128,13 @@ function updateMeeseeks(id, newName, newPurpose, newDateActivated) {
     }
   };
 getMeeseeks();
+
+//Pop up message (toast) 
+
+// var myToastEl = document.getElementById('myToast')
+// myToastEl.addEventListener('hidden.bs.toast', function () {
+//     toast.show()
+// })
+
+// Data Picker Initialization
+$('.datepicker').pickadate();

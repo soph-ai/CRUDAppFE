@@ -13,38 +13,77 @@
         <main>
 
         <h1>Mr Meeseeks Box!</h1>
-
-        <main class="container">
+        <main class="container-fluid">
             <div class="row">
-        <img class="resize" src ="Meeseek Image.png" id ="image">
 
-    <section class="col-3">
-        <form id="meeseeksForm">
-            <label for="meeseeksName">Name</label>
-            <input name="name" id="meeseeksName" class="form-control" autofocus>
-            <label for="meeseeksPurpose" class="form-label">Purpose:</label>
-            <input name="purpose" id="meeseeksPurpose" class="form-control" min="0">
-            <label for="dateActivated" class="form-label">Date Activated:</label>
-            <input name="dateActivated" id="dateActivated" class="form-control mb-2">
-            <button type="reset" class="btn btn-primary">Reset</button>
-            <button type="submit" class="btn btn-primary">Activate!</button>
-        </form>
-    </section>
+                <!-- <div class="MrMButton">
+                    <img class="resize" src ="Meeseek Image.png" alt= "Mr Meeseeks!" id ="image">
+                
+                <button type="submit" class="btn" id="liveToastBtn">Hi!</button>
+                  <div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 5">
+                    <div id="myToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="..."> -->
+                        <!-- <strong class="me-auto">Bootstrap</strong> -->
+                        <!-- <small>11 mins ago</small> -->
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        Hi, I'm Mr Meeseeks! Look at me!! 
+                      </div>
+                    </div>
+                  </div>
+                </div> --> 
+                <div class="col-md-2">       
+                </div>
+                      <div class="col-lg-5">
+                        <section class="col-auto">
+                            <form id="meeseeksForm">
+                                <label for="meeseeksName">Name for Mr Meeseeks</label>
+                                <input placeholder="Name" name="name" id="meeseeksName" class="form-control" autofocus>
+                                <label for="meeseeksPurpose" class="form-label">Task/Purpose:</label>
+                                <input placeholder="Purpose" name="purpose" id="meeseeksPurpose" class="form-control" min="0">
+                                <label for="dateActivated" class="form-label">Date Activated:</label>
+                                <input placeholder="Selected date" type= "date" name="dateActivated" id="dateActivated" class="form-control datepicker">
+                                <button type="reset" class="btn btn-dark">Reset</button>
+                                <!-- <div class="container"> -->
+                                    <img class="resize" src="Mr._Meeseeks_Box.png" alt="Mr Meeseeks Box" style="width:50%" id ="image2">
+                                
+                                    <button type="submit" class="btn btn-primary">Activate!</button>
+                                  <!-- </div> -->
+                                
+                            </form>
+                        </section>
+                      </div>
 
-        <section class="col-11">
-            <div id="output" class="m-2 card-group row row-cols-4 g-4">
+                      <div class="col-md-2">
+                        <img class="resize" src ="Meeseek Image.png" alt= "Mr Meeseeks!" id ="image">
+                       </div>
+
+                      <div class="col-md-2">
+                       <img class="resize" src ="Meeseek Image.png" alt= "Mr Meeseeks!" id ="image">
+                      </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+              
+
+        <!-- <section class="col-md-12"> -->
+            <div id="output" class="m-2 card-group row row-cols-10 g-4">
             </div>
-        </section>
+        <!-- </section> -->
 
         <div class="modal" tabindex="-1" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Update</h5>
+              <h5 class="modal-title">Update Mr Meeseeks!</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Update your Mr Meeseeks here!</p>
+              <p>Persuade your Mr Meeseeks to shift his purpose!</p>
+              <p> (You can also edit his name or the date he was activated if you want to).</p>
               <form id="meeseeksUpdate">
                 <label for="meeseeksName">Name</label>
                 <input name="name" id="meeseeksName" class="form-control" autofocus>
@@ -61,6 +100,7 @@
           </div>
         </div>
       </div>
+
     </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
