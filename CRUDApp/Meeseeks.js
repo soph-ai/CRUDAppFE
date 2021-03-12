@@ -20,10 +20,10 @@ function getMeeseeks() {
 function renderMeeseeks(meeseek) {
 
     const newColumn = document.createElement("div");
-    newColumn.className = "col";
+    newColumn.className = "col-4";
 
     const newMeeseeks = document.createElement("div");
-    newMeeseeks.className = "card";
+    newMeeseeks.className = "card text-center";
     newColumn.appendChild(newMeeseeks);
 
     const meeseeksBody = document.createElement("div");
@@ -135,3 +135,6 @@ getMeeseeks();
 // myToastEl.addEventListener('hidden.bs.toast', function () {
 //     toast.show()
 // })
+
+// Data Picker Initialization
+$('.datepicker').pickadate();

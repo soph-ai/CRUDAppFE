@@ -13,8 +13,7 @@
         <main>
 
         <h1>Mr Meeseeks Box!</h1>
-
-        <main class="container">
+        <main class="container-fluid">
             <div class="row">
 
                 <!-- <div class="MrMButton">
@@ -35,30 +34,45 @@
                     </div>
                   </div>
                 </div> --> 
-        
+                <div class="col-md-2">       
+                </div>
+                      <div class="col-lg-5">
+                        <section class="col-auto">
+                            <form id="meeseeksForm">
+                                <label for="meeseeksName">Name for Mr Meeseeks</label>
+                                <input placeholder="Name" name="name" id="meeseeksName" class="form-control" autofocus>
+                                <label for="meeseeksPurpose" class="form-label">Task/Purpose:</label>
+                                <input placeholder="Purpose" name="purpose" id="meeseeksPurpose" class="form-control" min="0">
+                                <label for="dateActivated" class="form-label">Date Activated:</label>
+                                <input placeholder="Selected date" type= "date" name="dateActivated" id="dateActivated" class="form-control datepicker">
+                                <button type="reset" class="btn btn-dark">Reset</button>
+                                <!-- <div class="container"> -->
+                                    <img class="resize" src="Mr._Meeseeks_Box.png" alt="Mr Meeseeks Box" style="width:50%" id ="image2">
+                                
+                                    <button type="submit" class="btn btn-primary">Activate!</button>
+                                  <!-- </div> -->
+                                
+                            </form>
+                        </section>
+                      </div>
 
-    <section class="col-auto">
-        <form id="meeseeksForm">
-            <label for="meeseeksName">Name for Mr Meeseeks</label>
-            <input name="name" id="meeseeksName" class="form-control" autofocus>
-            <label for="meeseeksPurpose" class="form-label">Task/Purpose:</label>
-            <input name="purpose" id="meeseeksPurpose" class="form-control" min="0">
-            <label for="dateActivated" class="form-label">Date Activated:</label>
-            <input name="dateActivated" id="dateActivated" class="form-control mb-2">
-            <button type="reset" class="btn btn-dark">Reset</button>
-            <!-- <div class="container"> -->
-                <img src="Mr._Meeseeks_Box.png" alt="Mr Meeseeks Box" style="width:100%">
-            
-                <button type="submit" class="btn btn-primary">Activate!</button>
-              <!-- </div> -->
-            
-        </form>
-    </section>
+                      <div class="col-md-2">
+                        <img class="resize" src ="Meeseek Image.png" alt= "Mr Meeseeks!" id ="image">
+                       </div>
 
-        <section class="col-11">
-            <div id="output" class="m-2 card-group row row-cols-1 g-4">
+                      <div class="col-md-2">
+                       <img class="resize" src ="Meeseek Image.png" alt= "Mr Meeseeks!" id ="image">
+                      </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+              
+
+        <!-- <section class="col-md-12"> -->
+            <div id="output" class="m-2 card-group row row-cols-10 g-4">
             </div>
-        </section>
+        <!-- </section> -->
 
         <div class="modal" tabindex="-1" id="myModal">
         <div class="modal-dialog">

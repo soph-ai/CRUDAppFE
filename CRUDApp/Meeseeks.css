@@ -11,6 +11,11 @@ h1 {
     height:450px;
 }
 
+#image2.resize {
+    width:20%;
+    height:auto;
+}
+
 body {
     background-color:rgb(94, 106, 117)
 }
