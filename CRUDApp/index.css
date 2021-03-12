@@ -26,3 +26,8 @@ body {
     /* background-image: linear-gradient(rgb(44, 129, 240), rgb(105, 184, 236)); */
 
 }
+
+#image3.resize {
+    width:50%;
+    height:auto;
+}
