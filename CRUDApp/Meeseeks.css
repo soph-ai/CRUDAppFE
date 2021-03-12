@@ -16,10 +16,6 @@ h1 {
     height:auto;
 }
 
-body {
-    background-color:rgb(94, 106, 117)
-}
-
 .container {
     position: relative;
     width: 100%;
@@ -72,7 +68,7 @@ body {
     color:rgb(30, 193, 243)
 }
 
-.MrMButton {
+/* .MrMButton {
     position: relative;
     width: 100%;
     max-width: 400px;
@@ -81,9 +77,9 @@ body {
   .MrMButton img {
     width: 100%;
     height: auto;
-  }
+  } */
   
-  .MrMButton .btn {
+  /* .MrMButton .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,12 +93,12 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-  }
+  } */
   
-  .MrMButton .btn:hover {
+  /* .MrMButton .btn:hover {
     background-color:greenyellow;
     color: black;
-  }
+  } */
 
   
   a:link {
@@ -121,4 +117,8 @@ body {
     color:rgb(255, 51, 0);
     background-color: transparent;
     text-decoration: underline;
+  }
+
+  body {
+    background-image: linear-gradient(to bottom right, rgb(94, 106, 117),rgb(127, 167, 54));
   }
