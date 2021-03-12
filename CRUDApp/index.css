@@ -1,0 +1,34 @@
+div#blurb {
+    color:yellowgreen;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+h1 {
+    text-align: center 
+}
+
+#homeBody {
+    color:purple;
+}
+
+p {
+    font-size: 22px;
+}
+
+#homeRef {
+    text-align: center 
+}
+
+body {
+    background-color:rgb(94, 106, 117)
+}
+
+#image3.resize {
+    width:50%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

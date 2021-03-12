@@ -1,0 +1,91 @@
+h1 {
+    text-align: center 
+}
+
+h1 {
+   color:yellowgreen 
+}
+
+#image.resize {
+    width:auto;
+    height:450px;
+}
+
+#image2.resize {
+    width:20%;
+    height:auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn btn-primary {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:rgb(94, 106, 117);
+    color:yellowgreen;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .btn btn-primary:hover {
+    background-color:rgb(94, 106, 117);
+    color:yellowgreen; 
+  }
+
+.card-link {
+    color:deepskyblue;
+    border-radius: 8px;
+    border:none;
+}
+
+.card-link:hover {
+    background-color:deepskyblue; 
+    color: black;
+  }
+
+  .card-link:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+#meeseeksForm {
+    color:rgb(30, 193, 243)
+}
+ 
+  a:link {
+    color:orangered;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:purple;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:rgb(255, 51, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  body {
+    background-image: linear-gradient(to bottom right, rgb(94, 106, 117),rgb(127, 167, 54));
+  }
