@@ -129,12 +129,5 @@ function updateMeeseeks(id, newName, newPurpose, newDateActivated) {
 };
 getMeeseeks();
 
-//Pop up message (toast) 
-
-// var myToastEl = document.getElementById('myToast')
-// myToastEl.addEventListener('hidden.bs.toast', function () {
-//     toast.show()
-// })
-
 // Data Picker Initialization
 $('.datepicker').pickadate();

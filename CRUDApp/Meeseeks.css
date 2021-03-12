@@ -67,40 +67,7 @@ h1 {
 #meeseeksForm {
     color:rgb(30, 193, 243)
 }
-
-/* .MrMButton {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .MrMButton img {
-    width: 100%;
-    height: auto;
-  } */
-  
-  /* .MrMButton .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color:deepskyblue;
-    color: black;
-    font-size: 16px;
-    padding: 6px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-  } */
-  
-  /* .MrMButton .btn:hover {
-    background-color:greenyellow;
-    color: black;
-  } */
-
-  
+ 
   a:link {
     color:orangered;
     background-color: transparent;
