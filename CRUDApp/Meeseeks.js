@@ -95,7 +95,7 @@ function renderMeeseeks(meeseek) {
   });
 
 
-  //update 
+  //update/edit Mr Meeseeks method 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'));
 let id;
 document.getElementById("meeseeksUpdate").addEventListener('submit', function (event) {
@@ -128,3 +128,10 @@ function updateMeeseeks(id, newName, newPurpose, newDateActivated) {
     }
   };
 getMeeseeks();
+
+//Pop up message (toast) 
+
+// var myToastEl = document.getElementById('myToast')
+// myToastEl.addEventListener('hidden.bs.toast', function () {
+//     toast.show()
+// })
