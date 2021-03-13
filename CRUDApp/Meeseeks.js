@@ -1,6 +1,6 @@
 'use strict'
 
-const contextPath = "";
+const contextPath = "http://localhost:8080";
 const output = document.getElementById("output");
 
 function getMeeseeks() {
