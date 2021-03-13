@@ -67,7 +67,7 @@ h1 {
 #meeseeksForm {
     color:rgb(30, 193, 243)
 }
- 
+
   a:link {
     color:orangered;
     background-color: transparent;
@@ -88,4 +88,11 @@ h1 {
 
   body {
     background-image: linear-gradient(to bottom right, rgb(94, 106, 117),rgb(127, 167, 54));
+  }
+
+  #activate {
+      background-color:rgb(6, 188, 243);
+      text-emphasis:initial;
+      border: rgb(6, 188, 243);
+  
   }
